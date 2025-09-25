@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(72, 135, 187);
+    text-align: center;
+    font-family: 'trebuchet ms';
+}
+ 
+h1{
+    color: goldenrod;
+    text-transform: uppercase;
+    font-family: Arial black;
+    letter-spacing: 3px;
+}
+ 
+h1:hover{
+    color: rgb(137, 45, 223);
+    cursor: crosshair;
+}
+ 
+input{
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 3px;
+    font-size: 16px;
+}
+ 
+button{
+    border: 0;
+    background-color: rgb(204, 35, 35);
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 10px;
+    cursor: pointer;
+ 
+}
+ 
+h3{
+   background-color: goldenrod
+}
+ 
+span{
+    color: black
+}
