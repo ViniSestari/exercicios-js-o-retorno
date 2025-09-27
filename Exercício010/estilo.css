@@ -1,0 +1,20 @@
+body{
+    background-color: #407a7c;
+    text-align: center;
+}
+ 
+#painel_formulario{
+    background-color: #b18025;
+    margin: 40px;
+    padding: 10px;
+}
+ 
+#painel_resultado{
+    background-color: #b18025;
+    margin: 40px;
+    padding: 10px;
+    display: none;
+}
+blockquote {
+    font-size: 50px;
+}

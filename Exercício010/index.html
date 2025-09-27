@@ -4,21 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 010</title>
+
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <h1>Exercício 010</h1>
     <blockquote>"A camisinha estourou para eu nascer, e eu nasci para estourar😎."</blockquote>
-    
-    <p>10 Calculando a média de N alunos</p>
-
-    <form>
-        <label>Qtd de Alunos: </label>
-        <input type="number" id="qtd"><br>
+     <hr>
+ 
+    <form id="painel_formulario">
+ 
+        <label>Nome do Aluno:</label>
+        <input id="nome"><br>
+ 
+        <label>Nota 1:</label>
+        <input type="number" id="nota1"><br>
+ 
+        <label>Nota 2:</label>
+        <input type="number" id="nota2"><br>
+ 
+        <label>Nota 3:</label>
+        <input type="number" id="nota3"><br>
+ 
+        <label>Nota 4:</label>
+        <input type="number" id="nota4"><br>
+ 
         <button type="button" onclick="fnCalcularMedia()">Calcular Média</button>
-        <ol id="lista_media"></ol>
+ 
     </form>
+ 
+    <div id="painel_resultado">
+        <h3>
+            A média do aluno:
+            <span id="nome_resultado"></span> -
+            <span id="media"></span>
+        </h3>
 
+        <button type="button" onclick="fnExibir('formulario')">Calcular a média de outro aluno</button>
+
+    </div>
+ 
     <script src="app.js"></script>
-
+ 
 </body>
+ 
 </html>
