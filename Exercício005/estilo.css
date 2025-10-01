@@ -1,0 +1,37 @@
+/*
+Cores originais:
+Cor do texto: #0000ff
+Cor de fundo: #d87093
+ 
+cor do dia:
+cor do texto: black
+cor do fundo: #E0F7FA 0%, #B2EBF2 50%, #81D4FA 100%
+ 
+ 
+cor da tarde:
+cor do texto: white
+cor de fundo:  #FF7E5F 0%, #FF9478 50%, #FEB47B 100%
+ 
+cor da noite:
+cor do texto: white
+cor de fundo:   #0F2027 0%, #203A43 50%, #2C5364 100%
+ 
+seletor
+tag --> body
+id --> #foto    
+class --> .nomedaclasse
+ 
+*/
+body {
+    color: #0000ff;
+    background: #836b1f;
+    font-size: 30px;
+    height: 100vh;
+    margin: 0;
+}
+ 
+#foto {
+    width: 350px;
+    border-radius: 20px;
+    border: 10px solid rgb(46, 117, 158);
+}
