@@ -21,20 +21,20 @@
         <p>13 Armazenamento lista de carros de um estacionamento</p>
         <hr>
  
-        <form class="border border-info border-1 rounded p-3 m-5">
+        <form class="border border-info border-1 rounded p-3 m-5" id="form_veiculos">
             <div class="row mb-3">
-                <div class="col">
+                <div class="col-12 col-md-6">
                     <label class="form-label">Número da Vaga</label>
                     <input class="form-control" id="numero_vaga">
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-6">
                     <label class="form-label">Veículo</label>
                     <input class="form-control" id="veiculo">
                 </div>
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <button type="button" class="btn btn-success w-50" onclick="fnSalvarVeiculo(); fnListarVeiculos();">SALVAR</button>
+                    <button type="button" class="btn btn-success w-50" onclick="fnSalvarVeiculo(); fnListarVeiculos(); fnLimpar()">SALVAR</button>
                 </div>
             </div>
         </form>

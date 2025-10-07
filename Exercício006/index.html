@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 006</title>
+</head>
+<body>
+ 
+    <h1>Exercício 006</h1>
+    <blockquote> "Tentar não, ou fazer - Yoda, mestre"</blockquote>
+ 
+    <p>06 Calcular as horas extras de um funcionario a partir das horas semanais trabalhadas. Considerar a carga horária do funcionario de 44 horas por semana.</p>
+ 
+    <form>
+ 
+        <label>Nome: </label>
+        <input id="nome" type="text" maxlength="50" size="30"><br>
+        <label> Carga horária semanal: </label>
+        <input id="ch_semanal" type="number" maxlength="99" min="0"><br>
+        <label> Carga horária trabalhada: </label>
+        <input id="ch_trabalhada" type="number" maxlength="99" min="0"><br>
+        <button type="button" onclick="fnCalcularSaldoDeHoras()">Calcular Horas</button>
+       
+        <h3> Saldo de horas</h3>
+        <ul id="lista_funcionarios"></ul>
+ 
+    </form>
+ 
+    <script src="app.js"></script>
+   
+</body>
+</html>
