@@ -1,0 +1,7 @@
+.cartao{
+    background-color: teal !important;
+    transition: transform 0.5s ease;
+}
+.cartao:hover{
+    transform: translateY(-15px);
+}
