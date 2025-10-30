@@ -16,16 +16,13 @@ function fnListar() {
  
     contatos.forEach(function (umContato, i) {
         dados += `
-        <div class="col-md-4 mb-4">
-            <div class="card" style="width: 100%;">
-                <img src="${umContato.foto}" class="card-img-top" alt="Foto de ${umContato.nome}" style="height: 200px; object-fit: cover;">
+        <div class='col-3 mb-4' data-indice='${i}'>
+            <div class="card" style="width: 18rem;">
+                <img src="${umContato.foto}" class="card-img-top"  alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${umContato.nome}</h5>
-                    <p class="card-text">
-                        <strong>Telefone:</strong> ${umContato.telefone} -
-                        <strong>Email:</strong> ${umContato.email}
-                    </p>
-                    <a href="mailto:${umContato.email}" class="btn btn-danger">Excluir</a>
+                    <p class="card-text">${umContato.telefone} - ${umContato.email}</p>
+                    <button type="button" onclick='fnExcluir(${i})' class="btn btn-danger">Excluir</button>
                 </div>
             </div>
         </div>`;
@@ -34,9 +31,17 @@ function fnListar() {
     document.getElementById("listadeContatos").innerHTML = dados;
 }
 
-function fnExcluir(){}
+function fnExcluir(indice){
+    contatos.splice(indice, 1)
+    fnListar()
+}
+
+function fnLimpar(){
+    document.getElementById('formulario').reset()
+}
 
 document.getElementById('btSalvar').addEventListener('click', function(){
     fnSalvar()
     fnListar()
+    fnLimpar()
 })
